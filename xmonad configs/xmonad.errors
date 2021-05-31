@@ -1,0 +1,20 @@
+
+xmonad.hs:7:1: error:
+    Could not load module `XMonad'
+    It is a member of the hidden package `xmonad-0.15'.
+    You can run `:set -package xmonad' to expose it.
+    (Note: this unloads all the modules in the current scope.)
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+  |
+7 | import XMonad
+  | ^^^^^^^^^^^^^
+
+xmonad.hs:20:1: error:
+    Could not load module `XMonad.StackSet'
+    It is a member of the hidden package `xmonad-0.15'.
+    You can run `:set -package xmonad' to expose it.
+    (Note: this unloads all the modules in the current scope.)
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+20 | import qualified XMonad.StackSet as W
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

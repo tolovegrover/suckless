@@ -1,0 +1,4 @@
+#!/bin/bash
+# Get the maximum volume of any pulseaudio sink channel
+pacmd list-sinks | grep "^\s\+volume:" | grep -o "[[:digit:]]\+%" | \
+    sort -nr | head -n 1
